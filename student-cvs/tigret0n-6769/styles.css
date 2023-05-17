@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Barlow', sans-serif;
+
 }
 
 body {
@@ -19,11 +20,14 @@ section {
   line-height: 1.8em;
 }
 
-/* Header */
+ul {
+  list-style-type: none;
+}
+
+/* Header form prueba en main*/
 .header{
     background-color: #6D348D;
       position: sticky;
-      top: 0;
       width: 100%;
   }
 
@@ -34,6 +38,7 @@ section {
     font-size: 60px;
     margin-left: 10px;
 }
+
 
 
 a {
@@ -56,14 +61,14 @@ a {
 
 .menu a {
     display: block;
-    padding: 30px;
+    padding: 20px;
     color: white;
+    
 }
 
 
 .menu a:hover{
     background-color: #00EC87;
-    font-size: 20px;
 }
 
 
@@ -125,14 +130,14 @@ visibility: hidden;
 @media (min-width: 768px) {
     .nav{
         max-height: none;
-        top: 0;
         position: relative;
         float: right;
         width: fit-content;
-        background-color: black;
+        background: transparent;
+        font-size: 1.3em;
     }
     
-    /*RESOLVER NAV BAR*/
+    /*ME QUEDÉ POR AQUÍ*/
     
     .menu li{
         float: left;
@@ -140,6 +145,8 @@ visibility: hidden;
     .menu a:hover{
         background-color: #00EC87;
         color: white;
+        font-size: 27px;
+
 
     }
 
@@ -163,10 +170,10 @@ h3 {
 
 /*Formulario de contacto*/
 
-.container_contact {
+/*.container_contact {
     padding-top: 4rem;
     padding-bottom: 2rem;
-  }
+  }*/
   
   
   .contact_box {
@@ -189,7 +196,7 @@ h3 {
     resize: vertical;
   }
   
-  input[type=checkbox] {
+  input[type=checkbox]:not(.side-menu) {
     display: inline-block;
     margin-top: 6px;
     margin-bottom: 16px;

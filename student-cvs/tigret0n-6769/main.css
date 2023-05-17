@@ -6,31 +6,22 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Barlow', sans-serif;
-  font-size: 18px;
 }
-
 
 /* Header */
 .header{
-  background-color: #6D348D;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-}
+    background-color: #6D348D;
+      position: sticky;
+      top: 0;
+      width: 100%;
+  }
 
-.header i {
-  font-size: 20px;
-}
-
-h1 {
-text-align: left;  
-}
-
+  
 /* Logo */
 .logo{
     display: inline-block;
-    font-size: 40px;
+    font-size: 60px;
+    margin-left: 10px;
 }
 
 
@@ -39,21 +30,22 @@ a {
   color: white;
 }
 
-/* Nav menu */
+/* Barra de navegación */
+/* Escondida hasta que se abra el menú */
 .nav{
     width: 100%;
     height: 100%;
-    position: relative;
+    position: fixed;
     overflow: hidden;
   background: #3F0C5B;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
 }
 
 
 .menu a {
     display: block;
-    padding: 30px;
+    padding: 20px;
     color: white;
 }
 
@@ -73,16 +65,16 @@ a {
 .hamb{
     cursor: pointer;
     float: right;
-    padding: 25px;
-}/* Style label tag */
+    padding: 40px 20px;
+  } /* label tag */
 
 .hamb-line {
     background: white;
-    display: flex;
+    display: block;
     height: 2px;
-    position: fixed;
+    position: relative;
     width: 24px;
-} /* Style span tag */
+} /* span tag */
 
 .hamb-line::before,
 .hamb-line::after{
@@ -102,11 +94,9 @@ a {
     top: -5px;
 }
 
-#side-menu {
-    display: none;
-    }
-
-/* Hide checkbox */
+.side-menu {
+  visibility: hidden;
+  }/* Esconder checkbox */
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav{
@@ -124,24 +114,39 @@ a {
     top: 0;
 }
 
-.container_whoami {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  width: 100%;
-  margin-bottom: 2vh;
-  background-color: #D7FEED;
-  color: #1E2C26;
+/* Responsivo para pantallas mayores de 768px */
+@media (min-width: 768px) {
+  .nav{
+      max-height: none;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background: transparent;
+      font-size: 1.3em;
+  }
+
+  
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: #00EC87;
+      color: white;
+      font-size: 27px;
+
+  }
+
+  .hamb{
+      display: none;
+  }
+
+  .introduction{
+    display: none;
+  }
 }
 
-.facts {
-padding-top: 10px;
-}
 
-
-
+/* Títulos de sección */
 h3 {
   font-size: 20px;
   border-radius: 20px;
@@ -189,76 +194,25 @@ h3 {
   border-radius: 10px;
 }
 
-.container_contact {
-display: block;
-text-align: center;
-padding: 20px;
-color: #1E2C26;
-}
+/* Quién soy */
 
-form {
-  display: inline-block;
-  margin: 2vh auto;
-  text-align: left;
-  background-color: #D7FEED;
-  padding: 2em;
-  border-radius: 10px;
-  width: 90%;
-}
+.facts {
+  padding-top: 10px;
+  }
 
-
-form > input, textarea {
-  margin: 5px 0;
+.container_whoami {
+  padding: 20px 20px 30px 20px;
   display: flex;
   flex-direction: column;
-}
-
-input[type=text],
-input[type=email],
-textarea {
+  justify-content: center;
+  text-align: justify;
   width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #2EC685;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
+  background-color: #D7FEED;
+  color: #1E2C26;
 }
 
-input[type=checkbox] {
-  display: inline-block;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  align-items: center;
-}
 
-.pronouns label:nth-child(2) {
-  padding: 0 1em;
-}
-
-.button {
-  text-align: center;
-}
-
-button[type=submit] {
-  margin-top: 1em;
-  text-align: center;
-  font-size: 24px;
-  text-decoration: none;
-  border: none;
-  padding: 15px 60px;
-  background-color: #6D348D;
-  color: #fff;
-  border-radius: 5px;
-  outline: none;
-}
-
+/* Footer */
 footer {
   position: relative;
   display: flex;
@@ -287,7 +241,6 @@ ul {
 }
 
 
-/*Añadir media query para desktop de la sección whoami*/
 
 
 

@@ -9,16 +9,25 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header>
-<nav class="navbar">
-<div class="menu">
-<ul>
-<li><a href="#skills">Conocimientos</a></li>
-<li><a href="#whoami">Sobre mí</a></li>
-<li><a href="#contact">Contacto</a></li>
-</ul>
-</div>
-</nav>
+    <header class="header">
+        <!-- Logo -->
+                <a href="#" class="logo">I<i class="fa-sharp fa-solid fa-bolt fa-flip-vertical" style="color: #f5ef47;"></i>anDev.</a>
+                <!-- Hamburger icon -->
+                <input class="side-menu" type="checkbox" id="side-menu">
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                
+          <nav class="nav">
+          <!-- <div class="introduction">
+          <h2><p>¡Hola 👋!<br>
+          Soy Izan, desarrollador Web en formación.</p></h2>
+          </div> --->
+            <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        
+        <li><a href="#contact">Contacto</a></li>
+        </ul>
+          </nav>
+        </header>
 
 <section class="container_contact" id="contact">
     <div class="contact_box">
@@ -54,6 +63,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     </ul>
     </div>
     </footer>
-    <script src="main.js"></script>
-    </body>
-    </html>
+    <script type="module" src="/main.mjs"></script>
+</body>
+</html>

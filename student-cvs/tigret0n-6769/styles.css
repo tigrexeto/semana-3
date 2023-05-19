@@ -72,7 +72,6 @@ a {
 }
 
 
-
 /* Menu Icon */
 .hamb{
     cursor: pointer;
@@ -137,8 +136,6 @@ visibility: hidden;
         font-size: 1.3em;
     }
     
-    /*ME QUEDÉ POR AQUÍ*/
-    
     .menu li{
         float: left;
     }
@@ -146,8 +143,6 @@ visibility: hidden;
         background-color: #00EC87;
         color: white;
         font-size: 27px;
-
-
     }
 
     .hamb{
@@ -155,7 +150,7 @@ visibility: hidden;
     }
 }
 
-/* Título */
+/* Títulos */
 
 h3 {
     overflow: hidden;
@@ -169,13 +164,7 @@ h3 {
 
 
 /*Formulario de contacto*/
-
-/*.container_contact {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }*/
-  
-  
+    
   .contact_box {
     background-color: #ffff;
     color: #170124;
